@@ -1,0 +1,80 @@
+:root {
+  --background-color: #1b2127;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* header {
+  height: 8vh;
+  background: var(--background-color);
+} */
+
+.nav {
+  display: flex;
+}
+
+.hero {
+  background: var(--background-color);
+  background-image: url(../images/pc.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+}
+
+.hero-image {
+  margin-top: 90px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.hero-image img {
+  border-radius: 50%;
+  width: 250px;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: -.2px;
+  /* color: #DCD9D7; */
+  color: white;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+h1 strong {
+  color: #026fff;
+  /* color: #0F55AE; */
+}
+
+.arrow-down {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.fa-arrow-down {
+  font-size: 30px;
+  color: white;
+  opacity: .8;
+}
+
+.fa-arrow-down:hover {
+  transition: .7s opacity ease;
+  opacity: 1;
+  transform: scale(1.25);
+}
+
+.portfolio {
+  height: 100vh;
+  background-image: url(../images/pc.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
