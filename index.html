@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diego Centeno</title>
   <link rel="stylesheet" href="css/estilos.css">
+  <link rel="shortcut icon" href="iconos/darth-vader.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Oswald:400,500,600,700&amp;display=swap">
   <script src="https://kit.fontawesome.com/4436ba58d1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<!--   <header>
+  <header>
     <nav class="menu">
       <ul>
         <li>
@@ -22,25 +23,112 @@
           <a href="#portfolio">Portafolio</a>
         </li>
         <li>
-          <a href="#contacto">Contactame</a>
+          <a href="#contacto">Contáctame</a>
         </li>
       </ul>
     </nav>
-  </header> -->
+  </header>
   <section class="hero">
-    <figure class="hero-image">
-      <img src="images/hero.jpg" alt="">
-    </figure>
-    <h1>
-      Hola! Soy <strong>Diego Centeno</strong> <br/>Humilde <strong>seguidor</strong> del lado oscuro<br/> Welcome to the <strong>dark side!</strong>
-    </h1>
-    <div class="arrow-down">
-      <a href="#portfolio"><i class="fas fa-arrow-down"></i></a>
+    <div class="opacity">
+      <figure class="hero-image">
+        <img src="images/hero.jpg" alt="">
+      </figure>
+      <h1 class="principal-title">
+        Hola! Soy <strong>Diego Centeno</strong><br>
+        <span>-Frontend Developer-</span>
+      </h1>
+      <div class="arrow-down">
+        <a href="#about"><i class="fas fa-arrow-down"></i></a>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="social">
+        <div class="toLeft">
+          <a href="https://github.com/Skywalker0816" class="social-link github" target="_blank"></a>
+          <a href="https://instagram.com" class="social-link instagram" target="_blank"></a>
+        </div>
+        <div class="toRight">
+          <a href="https://www.facebook.com/diegoivan.centenomercado" class="social-link facebook" target="_blank"></a>
+          <a href="https://twitter.com/DiegoCe47183660" class="social-link twitter" target="_blank"></a>
+        </div>
+      </div>
     </div>
   </section>
-  <!-- <section id="about" class="about"></section> -->
-  <section id="portfolio" class="portfolio">
-    
+  <section id="about" class="about">
+    <h2 class="about-title">Sobre mí</h2>
+    <!-- <figure class="about-image">
+      <img src="images/hero.jpg" alt="">
+    </figure> -->
+    <div class="about-details">
+      <p>Hola, soy Diego Centeno, apasionado por la tecnología y la programación. Actualmente tengo 16 años y estoy estudiando una carrera técnica de Desarrollo de Software, también estoy aprendiendo en plataformas online como Platzi💚</p>
+      <p id="hide" class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ad dolore quas voluptas provident architecto alias possimus inventore esse earum?</p>
+      <input id="aboutButton" class="about-button button" type="button" value="Ver más">
+    </div>
   </section>
+  <section id="portfolio" class="portfolio">
+    <h2 class="portfolio-title">Portafolio</h2>
+    <div class="projects">
+      <div class="project">
+        <h3 class="project-title">Mi blog</h3>
+        <figure class="project-image">
+          <img src="images/project1.jpg" alt="">
+          <div class="overlay">
+            <a href="">Ver el código</a>
+            <a href="">Ver la página</a>
+          </div>
+        </figure>
+        <div class="project-details">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea numquam natus ipsum quae tempora labore quibusdam corporis laudantium possimus ullam.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3 class="project-title">Mi blog</h3>
+        <figure class="project-image">
+          <img src="images/project1.jpg" alt="">
+          <div class="overlay">
+            <a href="">Ver el código</a>
+            <a href="">Ver la página</a>
+          </div>
+        </figure>
+        <div class="project-details">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea numquam natus ipsum quae tempora labore quibusdam corporis laudantium possimus ullam.</p>
+        </div>
+      </div>
+      <div id="hidep" class="hide">
+        <div class="project">
+          <h3 class="project-title">Mi blog</h3>
+          <figure class="project-image">
+            <img src="images/project1.jpg" alt="">
+            <div class="overlay">
+              <a href="">Ver el código</a>
+              <a href="">Ver la página</a>
+            </div>
+          </figure>
+          <div class="project-details">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea numquam natus ipsum quae tempora labore quibusdam corporis laudantium possimus ullam.</p>
+          </div>
+        </div>
+      </div>
+      <div id="hidep1" class="hide">
+        <div class="project">
+          <h3 class="project-title">Mi blog</h3>
+          <figure class="project-image">
+            <img src="images/project1.jpg" alt="">
+            <div class="overlay">
+              <a href="">Ver el código</a>
+              <a href="">Ver la página</a>
+            </div>
+          </figure>
+          <div class="project-details">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea numquam natus ipsum quae tempora labore quibusdam corporis laudantium possimus ullam.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <input id="portfolioButton" class="portfolio-button button" type="button" value="Ver más">
+  </section>
+  <script src="index.js"></script>
 </body>
 </html>
