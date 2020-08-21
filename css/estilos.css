@@ -7,25 +7,42 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Lato', sans-serif;
+  background: black;
+  overflow-x: hidden;
 }
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, .5);
+  border-radius: 10px;
+} 
 
 .hide {
   display: none;
 }
 
-.active {
+.fadeIn {
   display: inherit;
   /* transition: 1s ; */
-  animation: .8s fadeInDown forwards;
+  animation: .8s fadeIn forwards;
+}
+
+.active {
+  opacity: 1;
+  color: blue;
 }
 
 header {
   /* background: rgba(0, 0, 0, .3); */
-  position: absolute;
+  position: fixed;
   height: 10vh;
   width: 100%;
   display: flex;
@@ -213,7 +230,7 @@ h1 strong {
 .about {
   min-height: 100vh;
   /* background: #F5F5F5; */
-  background: black;
+  /* background: black; */
   color: #E5E5E5;
   text-align: center;
 }
@@ -221,8 +238,8 @@ h1 strong {
 .about-title {
   font-size: 40px;
   font-family: "Oswald", sans-serif;
-  padding-top: 50px;
-  margin-bottom: 20px;
+  padding-top: 85px;
+  margin-bottom: 10px;
 }
 
 .about-details {
@@ -244,11 +261,12 @@ h1 strong {
   margin-top: 12px;
   cursor: pointer;
   font-size: 16px;
+  transition: .9s ease;
 }
 
 .portfolio {
   min-height: 100vh;
-  background: black;
+  /* background: black; */
   color: #E5E5E5;
   text-align: center;
 }
@@ -257,6 +275,7 @@ h1 strong {
   margin-bottom: 40px;
   font-family: "Oswald", sans-serif;
   font-size: 35px;
+  padding-top: 70px;
 }
 
 .portfolio-button {
@@ -267,7 +286,7 @@ h1 strong {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
-  padding: 0 200px;
+  padding: 0 15vw;
 }
 
 .project {
@@ -275,9 +294,11 @@ h1 strong {
   border: 1px solid #E5E5E5;
   border-radius: 10px;
   /* padding: 10px; */
+  overflow: hidden;
 }
 
 .project-title {
+  width: 100%;
   margin: 7px auto 0;
   padding-bottom: 7px;
   border-bottom: 1px solid white;

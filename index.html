@@ -14,7 +14,7 @@
     <nav class="menu">
       <ul>
         <li>
-          <a href="">Inicio</a>
+          <a href="#home">Inicio</a>
         </li>
         <li>
           <a href="#about">Sobre mi</a>
@@ -23,12 +23,12 @@
           <a href="#portfolio">Portafolio</a>
         </li>
         <li>
-          <a href="#contacto">Contáctame</a>
+          <a href="#contact">Contáctame</a>
         </li>
       </ul>
     </nav>
   </header>
-  <section class="hero">
+  <section id="home" class="hero section">
     <div class="opacity">
       <figure class="hero-image">
         <img src="images/hero.jpg" alt="">
@@ -54,7 +54,7 @@
       </div>
     </div>
   </section>
-  <section id="about" class="about">
+  <section id="about" class="about section">
     <h2 class="about-title">Sobre mí</h2>
     <!-- <figure class="about-image">
       <img src="images/hero.jpg" alt="">
@@ -65,69 +65,18 @@
       <input id="aboutButton" class="about-button button" type="button" value="Ver más">
     </div>
   </section>
-  <section id="portfolio" class="portfolio">
+  <section id="portfolio" class="portfolio section">
     <h2 class="portfolio-title">Portafolio</h2>
-    <div class="projects">
-      <div class="project">
-        <h3 class="project-title">Mi blog</h3>
-        <figure class="project-image">
-          <img src="images/project1.jpg" alt="">
-          <div class="overlay">
-            <a href="">Ver el código</a>
-            <a href="">Ver la página</a>
-          </div>
-        </figure>
-        <div class="project-details">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea numquam natus ipsum quae tempora labore quibusdam corporis laudantium possimus ullam.</p>
-        </div>
-      </div>
-
-      <div class="project">
-        <h3 class="project-title">Mi blog</h3>
-        <figure class="project-image">
-          <img src="images/project1.jpg" alt="">
-          <div class="overlay">
-            <a href="">Ver el código</a>
-            <a href="">Ver la página</a>
-          </div>
-        </figure>
-        <div class="project-details">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea numquam natus ipsum quae tempora labore quibusdam corporis laudantium possimus ullam.</p>
-        </div>
-      </div>
-      <div id="hidep" class="hide">
-        <div class="project">
-          <h3 class="project-title">Mi blog</h3>
-          <figure class="project-image">
-            <img src="images/project1.jpg" alt="">
-            <div class="overlay">
-              <a href="">Ver el código</a>
-              <a href="">Ver la página</a>
-            </div>
-          </figure>
-          <div class="project-details">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea numquam natus ipsum quae tempora labore quibusdam corporis laudantium possimus ullam.</p>
-          </div>
-        </div>
-      </div>
-      <div id="hidep1" class="hide">
-        <div class="project">
-          <h3 class="project-title">Mi blog</h3>
-          <figure class="project-image">
-            <img src="images/project1.jpg" alt="">
-            <div class="overlay">
-              <a href="">Ver el código</a>
-              <a href="">Ver la página</a>
-            </div>
-          </figure>
-          <div class="project-details">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea numquam natus ipsum quae tempora labore quibusdam corporis laudantium possimus ullam.</p>
-          </div>
-        </div>
-      </div>
-
+    <div id="projects" class="projects">
+      <div id="project-1" class="project"></div>
+      <div id="project-2" class="project"></div>
+      <div id="project-3" class="hide project"></div>
+      <div id="project-4" class="hide project"></div>
     </div>
     <input id="portfolioButton" class="portfolio-button button" type="button" value="Ver más">
+  </section>
+  <section id="contact" class="section">
+
   </section>
   <script src="index.js"></script>
 </body>
