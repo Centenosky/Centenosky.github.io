@@ -1,16 +1,35 @@
-const $aboutButton = document.getElementById('aboutButton');
-const $portfolioButton = document.getElementById('portfolioButton');
-const $hide = document.getElementById('hide');
+const $home = document.querySelector('#home');
+// const $about = document.querySelector('#about');
+// const $portfolio = document.querySelector('#portfolio');
+// const $contact = document.querySelector('#contact');
+
+const $header = document.getElementById('header');
 
 const $project1Container = document.getElementById('project-1');
 const $project2Container = document.getElementById('project-2');
 const $project3Container = document.getElementById('project-3');
 const $project4Container = document.getElementById('project-4');
 
-// const $home = document.querySelector('#home');
-// const $about = document.querySelector('#about');
-// const $portfolio = document.querySelector('#document');
-// const $contact = document.querySelector('#contact');
+const $aboutButton = document.getElementById('aboutButton');
+const $portfolioButton = document.getElementById('portfolioButton');
+const $hide = document.getElementById('hide');
+
+let $homeHeight = $home.offsetHeight;
+
+function stickyHeader() {
+  $header.style.position = 'fixed';
+  $header.style.background = 'rgb(0, 0, 0)';
+}
+
+window.addEventListener('scroll', () => {
+  if ($homeHeight <= scrollY){
+    stickyHeader();
+  } else {
+    $header.style.position = 'absolute';
+    $header.style.background = 'transparent';
+
+  }
+})
 
 
 $aboutButton.addEventListener('click', () => {
@@ -38,8 +57,8 @@ function projectTemplate (project) {
     <figure class="project-image">
       <img src="${project.image}" alt="">
       <div class="overlay">
-        <a href="">Ver el código</a>
-        <a href="">Ver la página</a>
+        <a target="_black" href="${project.code}">Ver el código</a>
+        <a target="_black" href="${project.url}">Ver la página</a>
       </div>
     </figure>
     <div class="project-details">
@@ -52,22 +71,30 @@ function projectTemplate (project) {
 const project1 = {
   title: 'Mi blog',
   image: 'images/projects/mi-blog.png',
-  details: 'Lorem ipsum',
+  details: 'Mi blog creado con el curso practico de html y css',
+  code: 'https://github.com/Skywalker0816/Mi-Blog',
+  url: 'https://diego-blog.netlify.app',
 }
 const project2 = {
   title: 'Platzi Conf Hawaii',
   image: 'images/projects/platzi-conf.png',
-  details: 'Lorem ipsum',
+  details: 'Creado con bootstrap',
+  code: 'https://github.com/Skywalker0816/Platzi-Conf',
+  url: 'https://skywalker0816.github.io/Platzi-Conf/',
 }
 const project3 = {
   title: 'Clon de Google',
   image: 'images/projects/clon-google.png',
-  details: 'Lorem ipsum',
+  details: 'Clon de Google creado con el curso de html y css',
+  code: 'https://github.com/Skywalker0816/Google-clone',
+  url: 'https://skywalker0816.github.io/Google-clone/',
 }
 const project4 = {
   title: 'Clon de Facebook',
   image: 'images/projects/clon-facebook.png',
-  details: 'Lorem ipsum',
+  details: 'Reto de clonar Facebook',
+  code: 'https://github.com/Skywalker0816/Facebook-clone',
+  url: 'https://skywalker0816.github.io/Facebook-clone/',
 }
 const firstProject = projectTemplate(project1);
 const secondProject = projectTemplate(project2);
