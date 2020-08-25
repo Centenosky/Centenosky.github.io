@@ -182,10 +182,6 @@ h1 strong {
   justify-content: center;
 }
 
-.social {
-  display: flex;
-}
-
 .social-link {
   display: flex;
   align-items: center;
@@ -367,23 +363,32 @@ h1 strong {
 }
 
 .contact {
-  display: flex;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
   width: 100%;
   height: 70px;
-  /* background: rgba(0, 0, 0, .3); */
   align-items: top;
   justify-content: center;
-  animation: 10s scale infinite;
   /* animation-delay: 15s; */
+  /* border-top: 1px solid white;
+  padding-top: 30px; */
+}
+
+.social {
+  display: flex;
+  margin-bottom: 25px;
+  animation: 10s scale infinite;
 }
 
 footer {
   display: flex;
   flex-direction: column;
+  font-size: 13px;
   color: #E5E5E5;
   align-items: center;
   opacity: .8;
   padding-bottom: 15px;
+  padding-top: 50px;
 }
 
 @keyframes arrow {
