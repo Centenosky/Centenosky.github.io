@@ -374,11 +374,17 @@ h1 strong {
   padding-top: 30px; */
 }
 
+.contact-button {
+  margin: 0 auto;
+  padding: 10px;
+}
+
 .social {
   display: flex;
   margin-bottom: 25px;
   animation: 10s scale infinite;
 }
+
 
 footer {
   display: flex;
