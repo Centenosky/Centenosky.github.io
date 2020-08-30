@@ -34,10 +34,10 @@ window.addEventListener('scroll', () => {
 
 $aboutButton.addEventListener('click', () => {
   $hide.classList.toggle('fadeIn');
-  if ($aboutButton.value == 'Ver más') {
+  if ($aboutButton.value == 'Más sobre mi') {
     $aboutButton.setAttribute('value', 'Ver menos')
   } else {
-    $aboutButton.setAttribute('value', 'Ver más')
+    $aboutButton.setAttribute('value', 'Más sobre mi')
   }
 });
 $portfolioButton.addEventListener('click', () => {
