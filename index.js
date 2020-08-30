@@ -55,7 +55,7 @@ function projectTemplate (project) {
     `
     <h3 class="project-title">${project.title}</h3>
     <figure class="project-image">
-      <img src="${project.image}" alt="">
+      <img src="${project.image}" alt="${project.name}">
       <div class="overlay">
         <a target="_black" href="${project.code}">Ver el código</a>
         <a target="_black" href="${project.url}">Ver la página</a>
