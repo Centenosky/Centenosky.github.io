@@ -1,0 +1,71 @@
+.portfolio
+  // min-height: 100vh
+  color: color-primary
+  text-align: center
+  &-title
+    margin-bottom: 40px
+    font-family: fuente2
+    font-size: font-size-title
+    padding-top: 75px
+  &-button 
+    margin 30px 0 40px
+
+.projects 
+  display grid
+  grid-template-columns: 1fr 1fr
+  grid-gap: 30px
+  padding: 0 15vw
+
+.project 
+  border: 1px solid color-primary
+  border-radius: 10px
+  overflow hidden
+  &-title 
+    width: 100%
+    margin 7px auto 0
+    padding-bottom: 7px
+    border-bottom: 1px solid color-primary
+  &-image 
+    position relative
+    overflow hidden
+    background color-primary
+    img 
+      width: 100%
+      object-fit: cover
+  &-details 
+    padding: 12px
+    border-top: 1px solid color-primary
+    font-size: font-size-small
+
+.overlay
+  display: none
+  animation: .8s fadeInUp forwards
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background: rgba(0, 0, 0, .9)
+  justify-content: center
+  align-items: center
+  .project:hover &
+    display: flex
+    flex-direction: column
+  a 
+    color color-primary
+    font-size: font-size-small
+    text-decoration: none
+    padding-bottom: 5px
+    margin-bottom: 10px
+    position relative
+    &:before 
+      content: ""
+      width: 0
+      height: 2px
+      background: color-primary
+      position: absolute
+      left: 0
+      bottom: 0
+      transition: all .5s
+    &:hover:before 
+      width: 100%

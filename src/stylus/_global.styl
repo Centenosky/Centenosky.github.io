@@ -1,0 +1,27 @@
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  scroll-behavior: smooth
+
+body
+  font-family: 'Lato', sans-serif
+  background: color-background
+  overflow-x: hidden
+  overflow-y: scroll
+  font-size: font-size-normal
+  &::-webkit-scrollbar
+    width: 7px
+    &-thumb
+      background: rgba(255, 255, 255, .5)
+
+.hide
+  display: none
+
+.fadeIn 
+  display: inherit
+  animation: .8s fadeIn forwards
+
+.active
+  opacity: 1
+  color: secundary-color
