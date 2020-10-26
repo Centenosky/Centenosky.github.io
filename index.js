@@ -23,7 +23,7 @@ function stickyHeader() {
   $header.style.background = 'rgb(0, 0, 0)';
 }
 
-ipad.addEventListener(validation)
+// ipad.addEventListener(validation)
 
 function validation(event) {
   if (event.matches) {
