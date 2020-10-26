@@ -25,11 +25,11 @@ function stickyHeader() {
 
 // ipad.addEventListener(validation)
 
-function validation(event) {
-  if (event.matches) {
+// function validation(event) {
+//   if (event.matches) {
     
-  }
-}
+//   }
+// }
 
 window.addEventListener('scroll', () => {
   if ($homeHeight <= scrollY){
@@ -37,7 +37,6 @@ window.addEventListener('scroll', () => {
   } else {
     $header.style.position = 'absolute';
     $header.style.background = 'transparent';
-
   }
 })
 
