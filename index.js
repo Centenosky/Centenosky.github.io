@@ -2,6 +2,7 @@ const $home = document.querySelector('#home');
 // const $about = document.querySelector('#about');
 // const $portfolio = document.querySelector('#portfolio');
 // const $contact = document.querySelector('#contact');
+const ipad = matchMedia('screen and (max-width: 767px)');
 
 const $header = document.getElementById('header');
 
@@ -10,6 +11,7 @@ const $project2Container = document.getElementById('project-2');
 const $project3Container = document.getElementById('project-3');
 const $project4Container = document.getElementById('project-4');
 
+// const $menuButton = document.getElementById('')
 const $aboutButton = document.getElementById('aboutButton');
 const $portfolioButton = document.getElementById('portfolioButton');
 const $hide = document.getElementById('hide');
@@ -19,6 +21,14 @@ let $homeHeight = $home.offsetHeight;
 function stickyHeader() {
   $header.style.position = 'fixed';
   $header.style.background = 'rgb(0, 0, 0)';
+}
+
+ipad.addEventListener(validation)
+
+function validation(event) {
+  if (event.matches) {
+    
+  }
 }
 
 window.addEventListener('scroll', () => {
@@ -72,29 +82,29 @@ const project1 = {
   title: 'Mi blog',
   image: 'images/projects/mi-blog.png',
   details: 'Mi blog creado con el curso practico de html y css',
-  code: 'https://github.com/Skywalker0816/Mi-Blog',
+  code: 'https://github.com/Centenosky/Mi-Blog',
   url: 'https://diego-blog.netlify.app',
 }
 const project2 = {
   title: 'Platzi Conf Hawaii',
   image: 'images/projects/platzi-conf.png',
   details: 'Creado con bootstrap',
-  code: 'https://github.com/Skywalker0816/Platzi-Conf',
-  url: 'https://skywalker0816.github.io/Platzi-Conf/',
+  code: 'https://github.com/Centenosky/Platzi-Conf',
+  url: 'https://Centenosky.github.io/Platzi-Conf/',
 }
 const project3 = {
   title: 'Clon de Google',
   image: 'images/projects/clon-google.png',
   details: 'Clon de Google creado con el curso de html y css',
-  code: 'https://github.com/Skywalker0816/Google-clone',
-  url: 'https://skywalker0816.github.io/Google-clone/',
+  code: 'https://github.com/Centenosky/Google-clone',
+  url: 'https://Centenosky.github.io/Google-clone/',
 }
 const project4 = {
   title: 'Clon de Facebook',
   image: 'images/projects/clon-facebook.png',
   details: 'Reto de clonar Facebook',
-  code: 'https://github.com/Skywalker0816/Facebook-clone',
-  url: 'https://skywalker0816.github.io/Facebook-clone/',
+  code: 'https://github.com/Centenosky/Facebook-clone',
+  url: 'https://Centenosky.github.io/Facebook-clone/',
 }
 const firstProject = projectTemplate(project1);
 const secondProject = projectTemplate(project2);
