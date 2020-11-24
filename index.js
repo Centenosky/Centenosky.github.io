@@ -2,19 +2,23 @@ const $home = document.querySelector('#home');
 // const $about = document.querySelector('#about');
 // const $portfolio = document.querySelector('#portfolio');
 // const $contact = document.querySelector('#contact');
-const ipad = matchMedia('screen and (max-width: 767px)');
+
+const $toggleIcon = document.querySelector('.toggle-icon');
+const $iconContainer = document.getElementById('icon-container');
 
 const $header = document.getElementById('header');
+const $menu = document.getElementById('menu');
 
 const $project1Container = document.getElementById('project-1');
 const $project2Container = document.getElementById('project-2');
 const $project3Container = document.getElementById('project-3');
 const $project4Container = document.getElementById('project-4');
 
-// const $menuButton = document.getElementById('')
 const $aboutButton = document.getElementById('aboutButton');
 const $portfolioButton = document.getElementById('portfolioButton');
 const $hide = document.getElementById('hide');
+
+const ipad = matchMedia('screen and(max-width: 480px)');
 
 let $homeHeight = $home.offsetHeight;
 
@@ -23,23 +27,34 @@ function stickyHeader() {
   $header.style.background = 'rgb(0, 0, 0)';
 }
 
-// ipad.addEventListener(validation)
-
-// function validation(event) {
-//   if (event.matches) {
-    
-//   }
-// }
-
-window.addEventListener('scroll', () => {
+function superScroll() {
   if ($homeHeight <= scrollY){
     stickyHeader();
   } else {
     $header.style.position = 'absolute';
     $header.style.background = 'transparent';
   }
-})
+}
 
+ipad.addListener(validation)
+
+function validation(event) {
+  if (event.matches) {
+    window.addEventListener('scroll', superScroll)
+  }
+  else {
+    window.removeEventListener('scroll', superScroll)
+  }
+}
+validation(ipad);
+
+
+
+$toggleIcon.addEventListener('click', () => {
+  $iconContainer.classList.toggle('pushed');
+  $menu.classList.toggle('visible');
+  $header.classList.toggle('backdrop')
+});
 
 $aboutButton.addEventListener('click', () => {
   $hide.classList.toggle('fadeIn');

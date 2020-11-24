@@ -1,22 +1,71 @@
 @media screen and (max-width: 480px)
+  #icon-container 
+    display: flex
+  //home
   header 
     height 100vh
-    display: none
-  
-  .backdrop
-    background: rgba(0, 0, 0, .6)
-    backdrop-filter: blur(10px)
+    // display: none
 
   .menu
     position: absolute
     top: 0 
     bottom: 0
-    left 0
     right 0
-    height 100%
+    width 60%
+    justify-content: center
+    display: none
+    animation 1s forwards
+    background: rgba(0, 0, 0, .85)
     ul 
       height 100%
       flex-direction: column
       align-items: center
       li 
         margin: 15px 0
+
+  .hero
+    background-image: url(../../../images/pc-mini.jpeg)
+    overflow hidden
+
+  .hero-image 
+    margin-top: 12vh
+    margin-bottom: 20px
+    img  
+      height 33.5vh
+
+  .principal-title 
+    font-size: 37px
+    span 
+      font-size: 30px
+
+  .arrow-down 
+    margin-top 23px
+
+  .fa-arrow-down
+    font-size: 35px
+
+  //about 
+  .about 
+    min-height: 0
+    &-title 
+      padding-top: 3vh
+    &-details 
+      max-width 82%
+  
+  .stack 
+    max-width 82%
+    margin: 25px auto
+
+  //portfolio
+  .portfolio 
+    &-title 
+      padding-top: 3vh
+
+  .projects 
+    grid-template-columns: 1fr
+    padding: 0 10vw
+
+  .visible 
+    display: flex
+    backdrop-filter: blur(10px)
+    transition: 1s all
