@@ -38,6 +38,7 @@ header {
   justify-items: center;
   animation: 1s fadeInDown forwards;
   transition: 0.5s;
+  z-index: 1;
 }
 .menu {
   width: 100%;
@@ -534,6 +535,7 @@ footer {
   }
   header {
     height: 100vh;
+    z-index: 0;
   }
   .menu {
     position: absolute;
