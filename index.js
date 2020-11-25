@@ -18,18 +18,14 @@ const $aboutButton = document.getElementById('aboutButton');
 const $portfolioButton = document.getElementById('portfolioButton');
 const $hide = document.getElementById('hide');
 
-const ipad = matchMedia('screen and(max-width: 480px)');
+const ipad = matchMedia('screen and (max-width: 480px)');
 
 let $homeHeight = $home.offsetHeight;
 
-function stickyHeader() {
-  $header.style.position = 'fixed';
-  $header.style.background = 'rgb(0, 0, 0)';
-}
-
 function superScroll() {
   if ($homeHeight <= scrollY){
-    stickyHeader();
+    $header.style.position = 'fixed';
+    $header.style.background = 'rgb(0, 0, 0)';
   } else {
     $header.style.position = 'absolute';
     $header.style.background = 'transparent';
@@ -40,15 +36,14 @@ ipad.addListener(validation)
 
 function validation(event) {
   if (event.matches) {
-    window.addEventListener('scroll', superScroll)
-  }
-  else {
     window.removeEventListener('scroll', superScroll)
   }
+  else {
+    window.addEventListener('scroll', superScroll)
+  }
 }
+
 validation(ipad);
-
-
 
 $toggleIcon.addEventListener('click', () => {
   $iconContainer.classList.toggle('pushed');
