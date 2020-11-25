@@ -38,7 +38,6 @@ header {
   justify-items: center;
   animation: 1s fadeInDown forwards;
   transition: 0.5s;
-  z-index: 2;
 }
 .menu {
   width: 100%;
@@ -53,6 +52,7 @@ header {
           backdrop-filter: blur(4px);
   transition: 1s all;
   position: fixed;
+  z-index: 2;
 }
 .menu a {
   font-size: 18px;
@@ -632,6 +632,9 @@ footer {
     max-width: 85%;
     margin: 25px auto;
     margin-top: 15px;
+  }
+  .portfolio-title {
+    font-size: 35px;
   }
   .projects {
     padding: 0 6vw;
