@@ -88,25 +88,25 @@ function projectTemplate (project) {
 }
 
 const project1 = {
+  title: '100tifi.co',
+  image: 'images/projects/cientifico.png',
+  details: 'Single Page Application con Vanilla JS',
+  code: 'https://github.com/Centenosky/100tifi.co',
+  url: 'https://centenosky.github.io/100tifi.co/',
+}
+const project2 = {
   title: 'Mi blog',
   image: 'images/projects/mi-blog.png',
   details: 'Mi blog creado con el curso practico de html y css',
   code: 'https://github.com/Centenosky/Mi-Blog',
   url: 'https://diego-blog.netlify.app',
 }
-const project2 = {
+const project3 = {
   title: 'Platzi Conf Hawaii',
   image: 'images/projects/platzi-conf.png',
   details: 'Creado con bootstrap',
   code: 'https://github.com/Centenosky/Platzi-Conf',
   url: 'https://Centenosky.github.io/Platzi-Conf/',
-}
-const project3 = {
-  title: 'Clon de Google',
-  image: 'images/projects/clon-google.png',
-  details: 'Clon de Google creado con el curso de html y css',
-  code: 'https://github.com/Centenosky/Google-clone',
-  url: 'https://Centenosky.github.io/Google-clone/',
 }
 const project4 = {
   title: 'Clon de Facebook',
